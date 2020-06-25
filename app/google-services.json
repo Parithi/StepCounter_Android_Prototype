@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1006306511639",
+    "firebase_url": "https://stepcounter-c2c5d.firebaseio.com",
+    "project_id": "stepcounter-c2c5d",
+    "storage_bucket": "stepcounter-c2c5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006306511639:android:f4bd2e33d49097de86c552",
+        "android_client_info": {
+          "package_name": "com.parithi.stepcounter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006306511639-9p8pl5q1k7oejp2bb8tqjvsh6v8gbuij.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parithi.stepcounter",
+            "certificate_hash": "0a4333592f7065a19c8c8d3c8457ca4359ac18f0"
+          }
+        },
+        {
+          "client_id": "1006306511639-1rlan8ibvi1o3ppma37ukn7lecip5qk0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaE5hzSMTZvi2XFSIvIDSjyhly1Reqo24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006306511639-1rlan8ibvi1o3ppma37ukn7lecip5qk0.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1006306511639-81khsa8tu8fc97ao0ttlqv8l97pvmpp6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.parithi.stepcounter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

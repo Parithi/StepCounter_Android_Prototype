@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="6dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shape_roundRect_bottomLeftRadius="16dp"
+        app:shape_roundRect_bottomRightRadius="16dp"
+        app:shape_roundRect_topLeftRadius="16dp"
+        app:shape_roundRect_topRightRadius="16dp"
+        app:layout_constraintCircleRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/container_view"
+            android:background="@color/blueBackground"
+            android:padding="16dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_text_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="June 14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/step_count_text_view"
+                app:layout_constraintTop_toBottomOf="@id/date_text_view"
+                app:layout_constraintStart_toStartOf="@id/date_text_view"
+                android:text="1212"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:text="😀"
+                android:textSize="36sp"
+                android:textColor="@color/black"
+                android:id="@+id/emoji_text_view" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

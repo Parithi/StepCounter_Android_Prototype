@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueBackground"
+    tools:context=".ui.main.StepCounterFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        android:id="@+id/title_text_view"
+        android:textSize="36sp"
+        android:layout_marginTop="48dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:src="@drawable/shoes"
+        android:id="@+id/app_logo_image_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:elevation="4dp"
+        android:layout_marginBottom="36dp"
+        android:id="@+id/sign_in_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:shape_roundRect_bottomLeftRadius="25dp"
+        app:shape_roundRect_bottomRightRadius="25dp"
+        app:shape_roundRect_topLeftRadius="25dp"
+        app:shape_roundRect_topRightRadius="25dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/google_icon"
+                android:drawablePadding="16dp"
+                android:gravity="center"
+                android:textSize="18sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:minHeight="50dp"
+                android:text="@string/login_with_google"
+                android:textAlignment="center"
+                android:textStyle="bold" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <TextView
+        android:id="@+id/salutation_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp" />
+
+    <com.github.florent37.shapeofview.shapes.CircleView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        app:shape_circle_borderColor="@color/white"
+        app:shape_circle_borderWidth="4dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/salutation_textview"
+        app:layout_constraintBottom_toBottomOf="@id/salutation_textview">
+
+        <ImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+    </com.github.florent37.shapeofview.shapes.CircleView>
+
+    <com.github.florent37.shapeofview.shapes.RoundRectView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="72dp"
+        android:elevation="4dp"
+        android:id="@+id/data_container_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:shape_roundRect_topLeftRadius="25dp"
+        app:shape_roundRect_topRightRadius="25dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="@color/white"
+            android:id="@+id/step_count_recycler_view"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.github.florent37.shapeofview.shapes.RoundRectView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/error_message"
+        android:id="@+id/error_text_view"
+        android:elevation="6dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@id/data_container_view"
+        app:layout_constraintBottom_toBottomOf="@id/data_container_view"
+        app:layout_constraintLeft_toLeftOf="@id/data_container_view"
+        app:layout_constraintRight_toRightOf="@id/data_container_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
