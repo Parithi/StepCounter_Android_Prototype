@@ -2,6 +2,8 @@
 
 Hi! This is a demo project that retrieves data from Google Fit for the past 7 days from the current date.
 
+Android Version - https://github.com/Parithi/StepCounter_iOS_Prototype
+
 ## Project Details
  - Written in Kotlin
  - Architecture : Model-View-Presenter
@@ -12,7 +14,7 @@ Hi! This is a demo project that retrieves data from Google Fit for the past 7 da
 
 ## Demo Video
 
-![Demo Video](https://i.imgur.com/R6l7JJg.gif)
+![Demo Video](https://i.imgur.com/fM7ut2m.gif)
 
 ## App Flow
 
