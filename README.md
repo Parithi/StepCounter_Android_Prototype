@@ -18,12 +18,13 @@ iOS Version - https://github.com/Parithi/StepCounter_iOS_Prototype
 
 ## App Flow
 
- - User can login using Google Sign In
+ - User can log in using Google Sign In
  - Allow access to Google Fit
-	 - On success, the step count details for the past 7 days are shown. Current daily step count target is set to 4000. Depending on the percentage of steps completed, different emojis are displayed
-	 - Current day's steps is highlighted in a different color and is only shown if any data is available.
-	 - On failure to access Google Fit, error message is displayed
+     - On success, the step count details for the past 7 days are shown. Current daily step count target is set to 4000. Depending on the percentage of steps completed, different emojis are displayed
+     - Current day's steps are highlighted in a different colour and are only shown if any data is available.
+     - On failure to access Google Fit, the error message is displayed
  - User can logout by clicking on the profile picture on the top right
+ 
 
 ## To-Dos
 
